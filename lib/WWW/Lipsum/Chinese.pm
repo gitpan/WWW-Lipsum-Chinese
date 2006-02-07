@@ -2,7 +2,8 @@ package WWW::Lipsum::Chinese;
 use strict;
 use warnings;
 use LWP::Simple;
-our $VERSION = '0.01';
+use Encode;
+our $VERSION = '0.02';
 
 sub new {
     return bless {};
@@ -30,7 +31,7 @@ sub _parse {
     $content =~ s{<hr size="1">.*$}{}s;
     $content =~ s{</?p>}{}sg;
     $self->{parsed} = 1;
-    $self->{content} = $content;
+    $self->{content} = Encode::decode("big5", $content);
     return $content;
 }
 

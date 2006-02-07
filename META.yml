@@ -1,5 +1,5 @@
 name: WWW-Lipsum-Chinese
-version: 0.01
+version: 0.02
 abstract: Chinese Lorem Ipsum Generator
 author: Kang-min Liu <gugod@gugod.org>.
 license: perl
@@ -9,6 +9,7 @@ build_requires:
   IO::All: 0
 requires:
   LWP::Simple: 0
+  Encode: 0
 no_index:
   directory:
     - inc

@@ -14,10 +14,10 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 2ba476d947744e4f2167e0de582e837baa84ec24 Changes
+SHA1 90c519884d5f0b6c645ca6bb5bf2e32dcdb72e13 Changes
 SHA1 3ca4a2f56090133d8d371245ee0e7e28140ed13a MANIFEST
-SHA1 0022b0d62f4fb3499be22d20b32b41c971ffd741 META.yml
-SHA1 30778896ef630cb9a94baa1ba77d2905e32eecdd Makefile.PL
+SHA1 278d968cc885078cc06a32819fadcde7a133d84f META.yml
+SHA1 0a995b93a259a84a4d7b79e9d2e93040c83191a4 Makefile.PL
 SHA1 53dc28dc824ffc833bf2a7d0a34b8fcee80cb6d8 inc/Module/Install.pm
 SHA1 05153f7b70e9501d54b3facb0bc8ee26b4966d6f inc/Module/Install/Base.pm
 SHA1 0042521215c263d69885b45d45cea00689270aca inc/Module/Install/Can.pm
@@ -26,7 +26,7 @@ SHA1 53ec499a40338066962b8d27f2e5a8c1de285bb1 inc/Module/Install/Makefile.pm
 SHA1 226436c6ddd5dd62a36a1e81086e76c7d5db8495 inc/Module/Install/Metadata.pm
 SHA1 d657161090f078b49b9035db383b6d2eb26561ff inc/Module/Install/Win32.pm
 SHA1 fca2129e567b9dbbef5cc4a216e436aae9717824 inc/Module/Install/WriteAll.pm
-SHA1 d6933140ea243e277efa8f797741c2382a861fcc lib/WWW/Lipsum/Chinese.pm
+SHA1 ae0cc8611ccf1e8fde1f33a1b9954d316a5e62b7 lib/WWW/Lipsum/Chinese.pm
 SHA1 67a360444bc60563e8be3d514b01df77aab36dc7 t/00.use.t
 SHA1 9d483e5ccd522f466f1dd6fab3fe1cbaefae30fc t/01.parse.t
 SHA1 6e181c67818763a8e1a2f45947fa0d01d9c4cda6 t/02.fetch.t
@@ -37,7 +37,7 @@ SHA1 b1cae21d5fb50c9bfcca3f7c4ce22d006ed72882 vendor/richyli-com-loremipsum.html
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.1 (Darwin)
 
-iD8DBQFD6MCZCSIfi0PaMDQRAtKKAKCXuUyZ54EPIb6clkEWFwZEFZDljQCdE4zb
-LlGqUgkl8JLCTBSSHphwotA=
-=7JRc
+iD8DBQFD6MVRCSIfi0PaMDQRAnQtAJsGTKyAzErqu7WqECVU7ARsFm9LQQCeOYYh
+6ov3lVK8mumDnaRlUBqPFgA=
+=04Ks
 -----END PGP SIGNATURE-----
