@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use LWP::Simple;
 use Encode;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub new {
     return bless {};
@@ -12,6 +12,7 @@ sub new {
 sub generate {
     my ($self) = @_;
     $self->_fetch;
+    $self->_to_utf8;
     $self->_parse;
     return $self->{content};
 }
@@ -31,8 +32,18 @@ sub _parse {
     $content =~ s{<hr size="1">.*$}{}s;
     $content =~ s{</?p>}{}sg;
     $self->{parsed} = 1;
-    $self->{content} = Encode::decode("big5", $content);
+    $self->{content} = $content;
     return $content;
+}
+
+sub _to_utf8 {
+    my $self = shift;
+    return unless defined $self->{content};
+    if ( Encode::is_utf8($self->{content} )) {
+        return $self->{content};
+    }
+    $self->{content} = Encode::decode("big5", $self->{content});
+    return $self->{content}
 }
 
 1;

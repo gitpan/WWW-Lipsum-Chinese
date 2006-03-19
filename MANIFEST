@@ -18,4 +18,3 @@ t/02.pod.t
 t/03.generate.t
 t/03.podcover.t
 vendor/richyli-com-loremipsum.html
-SIGNATURE                                Public-key signature (added by MakeMaker)
